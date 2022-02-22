@@ -1,0 +1,9 @@
+@import url("./colors.css");
+
+.image-border {
+    border: 1px solid var(--border-image-color);
+}
+
+.gallery {
+    margin-top: 4rem;
+}

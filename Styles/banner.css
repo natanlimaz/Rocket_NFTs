@@ -1,0 +1,89 @@
+@import url("../Styles/colors.css");
+
+#banner {
+    display: grid;
+    grid-template-columns: 2.5fr 4fr 1fr;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.columOne {
+    color: var(--text-color);
+}
+
+.columOne .box-imgs {
+    margin-top: 3rem;
+    position: relative;
+    width: 20rem;
+    height: 10rem;
+}
+
+.box-imgs #artista1 { 
+    position: absolute;
+    z-index: 5;
+    width: 5rem;
+}
+
+.box-imgs #artista2 {
+    position: absolute;
+    margin-left: 1.7rem;
+    z-index: 3;
+    width: 5rem;
+}
+
+.box-imgs #artista3 {
+    position: absolute;
+    margin-left: 4rem;
+    z-index: 2;
+    width: 5rem;
+}
+
+.box-imgs #artista4 {
+    position: absolute;
+    margin-left: 5.5rem;
+    z-index: 1;
+    width: 5rem;
+}
+
+.box-imgs span {
+    position: absolute;
+    margin-left: 11rem;
+    margin-top: 3rem;
+    font-size: 12px;
+}
+
+.box-imgs span #bold {
+    font-weight: bold;
+}
+
+.columTwo {
+    font-weight: bold;
+    font-size: 2.7rem;
+}
+
+.columTwo #nft {
+    color: var(--color-logo);
+}
+
+@media (max-width: 1000px) {
+    #banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #banner .columThree {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box-imgs {
+        margin-top: 3rem;
+        height: 5rem;
+    }
+    
+    .box-imgs span {
+        margin-left: 11rem;
+        margin-top: 1.5rem;
+    }
+}

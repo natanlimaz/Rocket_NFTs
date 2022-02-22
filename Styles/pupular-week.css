@@ -1,0 +1,71 @@
+@import url("./Styles/colors.css");
+
+.redName {
+    color: var(--color-logo);
+}
+
+#popular-of-the-week {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.title {
+    display: inline;
+}
+
+.card-left, .card-right {
+    line-height: 3rem;
+}
+
+#line {
+    border: 1px solid gray;
+    border-width: 0 0 0 1px;
+    height: 39rem;
+    opacity: 0.5;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subtitle {
+    color: var(--subtitle-color);
+}
+
+.seta-arrow-right {
+    width: 50px;
+    height: 40px;
+}
+
+@media (max-width: 1000px) {
+    
+    #popular-of-the-week {
+        display: block;
+    }
+
+    .card-left, .card-right {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        display: flex;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #line {
+        border: none;
+        padding: 0;
+        margin: 0;
+        height: 0;
+    }
+}

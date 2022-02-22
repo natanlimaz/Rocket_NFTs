@@ -1,0 +1,101 @@
+@import url(./colors.css);
+
+#fourthSection h1 span {
+    color: var(--color-logo);
+}
+
+#artistas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    width: 60rem;
+    margin-top: 5rem;
+}
+
+#fourthSection #artistas .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--card-color);
+
+    width: 15rem;
+    height: 7rem;
+}
+
+#fourthSection #artistas .card:hover {
+    border: 1px solid var(--border-image-color);
+    
+}
+
+#fourthSection #artistas .card.active {
+    background-color: var(--color-logo);
+}
+
+#fourthSection #artistas .card.active:hover {
+    border: 1px solid var(--border-image-color);
+}
+
+#fourthSection .card img {
+    width: 4rem;
+    height: 4rem;
+}
+
+#fourthSection .card .dados {
+    font-weight: bold;
+}
+
+#fourthSection .card .dados p:last-child {
+    color: var(--color-logo);
+    opacity: .8;
+
+    margin-top: 1rem;
+}
+
+#fourthSection #artistas .card.active p:last-child {
+    color: var(--text-color);
+}
+
+.ver-mais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-top: 3rem;
+}
+
+.ver-mais p {
+    display: inline;
+}
+
+.ver-mais #seta {
+    color: var(--color-logo);
+    width: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    #fourthSection {
+        margin-right: 3rem;
+    }
+
+    #artistas {
+        width: 40rem;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #fourthSection {
+        margin-right: 3rem;
+    }
+
+    #artistas {
+        width: 30rem;
+    }
+} 
